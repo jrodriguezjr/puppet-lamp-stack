@@ -6,7 +6,7 @@ class composer {
 
   exec { 'move-composer':
     command => 'mv /usr/local/bin/composer.phar /usr/local/bin/composer',
-    require => Exec['download_composer']
+    require => Exec['download-composer']
   }
 
 }
